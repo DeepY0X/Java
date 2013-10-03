@@ -1,0 +1,14 @@
+
+######## Install Java jdk in Ubuntu
+## - Download Jdk from Oracle Web Page in bin format
+## - Execute the bin file
+## - Move the created directory to /usr/lib/jvm
+## - Configure java paths 
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/java-1.7.0_40-sun-amd64/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/java-1.7.0_40-sun-amd64/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/java-1.7.0_40-sun-amd64/bin/javaws" 1
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+sudo update-alternatives --config javaw
+ 
